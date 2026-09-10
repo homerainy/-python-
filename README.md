@@ -9,27 +9,28 @@
 ├── README.md                       # 本文件
 │
 ├── .workbuddy/skills/              # ⭐ WorkBuddy 官方技能包（核心作业）
-│   └── agent-skill-101/            # 层层递进式刷题技能
-│       ├── SKILL.md                # 技能说明书（核心）
+│   ├── concept-learner/            # 层层递进式刷题技能（核心）
+│   │   ├── SKILL.md                # 技能说明书
+│   │   └── scripts/
+│   │       └── skill.py            # 刷题程序（5关20题，可运行）
+│   │
+│   └── agent-skill-101/            # Agent Skill 概念讲解技能
+│       ├── SKILL.md                # 技能说明书
 │       ├── assets/                 # 资源文件
 │       └── references/             # 参考资料
 │
-├── skill.py                        # 层层递进式刷题程序（5关20题，可运行）
 └── agent-skill-一分钟速通.html      # Agent Skill 可视化学习页
 ```
 
 ## 🎯 作业说明
 
-本仓库包含一个 **WorkBuddy Agent Skill**：
+本仓库包含两个 **WorkBuddy Agent Skill**：
 
-- **技能名称**：`agent-skill-101`
-- **功能**：讲解 Agent Skill 核心概念，支持层层递进式学习
-- **核心文件**：`.workbuddy/skills/agent-skill-101/SKILL.md`
+1. **`concept-learner`（核心作业）**：层层递进式刷题技能，覆盖 Python 入门 → 机器学习与 AI 共 5 关、20 题，难度逐级递增。
+2. **`agent-skill-101`**：讲解 Agent Skill 核心概念的技能。
 
-## 🚀 运行刷题程序
+## 🚀 运行刷题技能
 
 ```bash
-python skill.py
+python .workbuddy/skills/concept-learner/scripts/skill.py
 ```
-
-程序包含 5 个关卡、20 道题，从 Python 入门到机器学习与 AI，难度层层递进。
